@@ -14,6 +14,7 @@
   <input type="file" id="image">
   <button type="submit" id="submit">Submit</button>
 </form>
+<h2 id="info"></h2>
 </body>
 </html>
 
@@ -21,9 +22,11 @@
 const form = document.querySelector('form');
 const imageInput = document.querySelector('#image');
 const submitButton = document.querySelector('#submit');
+const info = document.querySelector('#info');
 const url = "http://localhost:3000/image";
 
 submitButton.addEventListener('click', async (event) => {
+info.textContent = "Loading..."
   event.preventDefault();
   const formData = new FormData();
   formData.append('image', imageInput.files[0]);
@@ -33,6 +36,8 @@ submitButton.addEventListener('click', async (event) => {
   });
   const result = await response.json();
   console.log(result);
+ 
+  info.textContent = result.label;
 
 });
     </script>
