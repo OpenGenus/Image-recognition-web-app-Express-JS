@@ -27,8 +27,10 @@ app.post('/image', upload.single('image'), async (req, res) => {
 
     res.send(result);
 });
-app.get('/', () => {
-    console.log("This is a test for home page")
+
+app.set('view engine', 'ejs');
+app.get('/', (req, res) => {
+    res.render('index');
 })
 
 app.listen(3000, () => {
