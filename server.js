@@ -10,7 +10,6 @@ const storage = multer.memoryStorage()
 const upload = multer({ storage: storage })
 
 app.post('/image', upload.single('image'), async (req, res) => {
-    console.log("This is a test for image upload", req.file)
     const buffer = req.file.buffer;
     const decodedImage = tf.node.decodeImage(buffer);
     if (!/^image\/(jpe?g|png|gif)$/i.test(req.file.mimetype)) {

@@ -6,15 +6,9 @@ const classes = require('./class_name');
 
 const TOP_K = 1; // Number of top predictions to return
 async function predictImageContents(imageData) {
-    console.log("AT TENSORFLOW --->", imageData);
-
     const model = await tf.loadLayersModel(
         "https://storage.googleapis.com/tfjs-models/tfjs/mobilenet_v1_0.25_224/model.json"
     );
-    // Load the class names
-    //const classes = await fetch(CLASSES_URL).then((response) => response.json());
-
-    // Preprocess the image
     const uint8Array = new Uint8Array(imageData.buffer);
     const decodedImage = tf.node.decodeImage(uint8Array);
     const resizedImage = tf.image.resizeBilinear(decodedImage, [224, 224]);
