@@ -29,6 +29,7 @@ The app uses a pre-trained MobileNet model from TensorFlow.js to recognize the i
 - Wait for the image recognition process to finish
 - View the most likely classification of the image
 - If you want to use it as API you can pass the image in the http://localhost:3000/image
+- You can find the class name file at [tensorflow](https://github.com/tensorflow/tfjs-models/tree/master/mobilenet)
 
 #### Cloning the project
 
