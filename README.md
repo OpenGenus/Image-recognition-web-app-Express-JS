@@ -46,7 +46,7 @@ git clone https://github.com/OpenGenus/Image-recognition-web-app-Express-JS <You
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/sentayhu19/My-Portfolio/issues).
+Feel free to check the [issues page](https://github.com/OpenGenus/Image-recognition-web-app-Express-JS/issues).
 
 ## Show your support
 
@@ -58,4 +58,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.![](https://img.shields.io/badge/Microverse-blueviolet)
+This project is [MIT](./MIT.md) licensed.!
