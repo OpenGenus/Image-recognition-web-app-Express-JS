@@ -55,7 +55,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
--This project was inspired by OpenGenus](https://iq.opengenus.org)
+-This project was inspired by [OpenGenus](https://iq.opengenus.org)
 
 ## 📝 License
 
